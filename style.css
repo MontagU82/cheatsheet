@@ -20,11 +20,38 @@ h2 {
     margin: 10px;
     padding: 10px;    
 }
+.heading-boarder {
+    display:flex;
+    width:100%;
+    }
+    .heading-boarder div {
+    width:calc(100vw / 3);
+    }
+    .header-bstyled {
+        text-align: center;
+        border-right: 5px solid coral;
+        border-left: 5px solid coral;
+        position: relative;
+        top: -25px;
+            }
+    .border{
+    margin-top: 18px;
+    height:0px;
+    border-top: 5px solid coral;
+    position: relative;
+    top: -25px;
+    }
+    .b-left{
+    border-left: 5px solid coral;
+    }
+    .b-right{
+    border-right: 5px solid coral;
+    }
 .header {
     border-color: coral;
     border-top: 0;
     margin-top: 25px;  
-}
+}/*
 #header {
     box-sizing: border-box;
     background: #fff;
@@ -34,12 +61,12 @@ h2 {
     height: 18px;
     line-height: 18px;
     width: 150px;
-    margin: -11.5px auto 0;  /*height 25px + 5px border = 30/2 = 15 */
+    margin: -11.5px auto 0;  /*height 25px + 5px border = 30/2 = 15 
     z-index: -1;
     position: relative;
     top: -5px;
     left: -320px;
-}
+}*/
 .nav-box {
     display: flex;
 }
