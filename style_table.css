@@ -1,0 +1,43 @@
+body {
+  font-family: 'Calibri', Arial, sans-serif  
+}
+
+table {
+    table-layout: auto;
+    width: 100%;
+    border: 3px solid darkgreen;
+    padding: 5px;
+    border-spacing: 5px;
+    border-collapse: separate;
+
+}
+td {
+    border: 1px solid forestgreen;
+    padding: 10px;
+    /*overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;*/
+}
+th {
+  border: 1px solid forestgreen;
+  color: dimgray;
+  background-color: rgba(0, 100, 0, .3);
+}
+h1 {
+  color: dimgray;
+  font-size:36px;
+  text-align: center;
+  text-decoration: underline;
+}
+.code {
+  font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+  font-size: smaller;
+
+}
+.elm-text {
+  background-color: lightgray;
+}
+.theading {
+  font-size:x-large;
+}

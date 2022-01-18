@@ -1,0 +1,167 @@
+ 
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>
+            Cheatsheet Table Semantic html
+        </title>
+        <link href="style_table.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Semantic html oberview</h1>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="theading">CHEATSHEET</th>
+                        <th colspan="2" class="theading">Semantic html</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id='colHeading'>
+                        <th>Tag</td>
+                        <th>Description</td>
+                        <th>Example Code</td>
+                        <th>Notes</th>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;header&gt;</td>
+                        <td>Describes the content at the of the page <span class="elm-text">&lt;body&gt;</span>.
+                        Includes a logo, navigational links or a search bar.</td>
+                        <td rowspan="4" class="code"><span class="comment">&lt;!--Non Semantic HTML--&gt;</span><br>
+                            &lt;div id="footer"&gt;<br>
+                             &lt;p&gt;this is a footer&lt;/p&gt;<br>
+                            &lt;/div&gt;<br><br>
+                             
+                            <span class="comment">&lt;!--Semantic HTML--&gt;</span><br>
+                            &lt;footer&gt;<br>
+                             &lt;p&gt;this is a footer&lt;/p&gt;<br>
+                            &lt;/footer&gt;</td><br>
+                        <td rowspan="4">Semantic HTML elements give developers an accurate view of what 
+                            the element does or where it is placed based on the name of that element.<br>
+                            Semantic HTML introduces meaning to code. Before Semantic HTML the elements didn`t 
+                            have any meaning as to what it does or what content goes in it. An element such as 
+                            <span class="elm-text">&lt;div&gt;</span> was used as a general-purpose element to 
+                            create things from headers to footers to articles. With Semantic HTML we were introduced 
+                            to elements that tell developers and browsers exactly what it does and what content 
+                            should go in it.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;nav&gt;</td>
+                        <td>Encapsulates the page`s navigatioonal links. Often placed inside the <span class="elm-text">
+                            &lt;header&gt;</span> or <span class="elm-text">&lt;footer&gt;</span>.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;main&gt;</td>
+                        <td>Encapsulates the main content of a page between the <span class="elm-text">
+                            &lt;header&gt;</span>, navigation and the <span class="elm-text">&lt;footer&gt;</span> areas.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;footer&gt;</td>
+                        <td>Includes the page`s footer content at the botton of the 
+                            <span class="elm-text">&lt;body&gt;</span>.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;section&gt;</td>
+                        <td>Defines elements in a document, such as chapters, headings, or any other area
+                            of the document with the same theme.
+                        </td>
+                        <td rowspan="2" class="code">&lt;section&gt;<br>
+                            <span class="comment">&lt;!--defines theme--&gt;</span><br>
+                            &lt;h2&gt;Top Sports league in America&lt;/h2&gt;<br>
+                            <span class="comment">&lt;!--writes independent content relating to that theme--&gt;</span><br>
+                            &lt;article&gt;<br>
+                              &lt;p&gt;One of the top sports league is the nba.&lt;/p&gt;<br>
+                            &lt;/article&gt;<br>
+                          &lt;/section&gt;</td>
+                        <td rowspan="2">Generally <span class="elm-text">&lt;section&gt;</span> is used to define a theme 
+                            for the webpage and <span class="elm-text">&lt;article&gt;</span> is used to write independent 
+                            content for that theme. <br>
+                            But it does not mean, that <span class="elm-text">&lt;article&gt;</span> has to be used with 
+                            <span class="elm-text">&lt;section&gt;</span>.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;article&gt;</td>
+                        <td>Holds content that make sense on its own such as articles, blogs and comments.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;aside&gt;</td>
+                        <td>Used to mark additional information that can enhance another element but isn`t required in 
+                            order to understand the main content.</td>
+                        <td class="code">&lt;article&gt;<br>
+                            <span class="comment">&lt;!--Main Content--&gt;</span><br>
+                            &lt;/article&gt;<br>
+                            &lt;aside&gt;<br>
+                            <span class="comment">&lt;!--Additional information--&gt;</span><br>
+                            &lt;/aside&gt;</td>
+                            <td>Usually, this information would be in a sidebar or a location where it doesn`t obstruct 
+                                the main piece of content. For example an article, discusses how to take care of a dog 
+                                and next to the article an ad would appear advertising a dog grooming product.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;video&gt;</td>
+                        <td>Add videos to the website. <span class="elm-text">&lt;video&gt;</span> requires a closing tag.</td>
+                        <td class="code">&lt;video src="4kvideo.mp4"&gt;video not supported&lt;/video&gt;</td>
+                        <td rowspan="3">Elemens all use the <span class="attribute">src</span> attribute to link the 
+                        source of the content.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;audio&gt;</td>
+                        <td>Implement audio to the website. <span class="elm-text">&lt;audio&gt;</span> requires a closing tag.</td>
+                        <td class="code">&lt;audio src="koreanhiphop.mp3"&gt;&lt;/audio&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;embed&gt;</td>
+                        <td>Used to implement any type of media. <span class="elm-text">&lt;embed&gt;</span> is a self-closing tag.</td>
+                        <td class="code">&lt;embed src="babyyoda.gif"/&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;figure&gt;</td>
+                        <td>Encapsulate media such as inages, diagrams or code snippets.
+                        <td rowspan="2" class="code">&lt;figure&gt; <br>
+                            &lt;img src="qwerty.jpg"&gt; <br>
+                            &lt;figcaption&gt;The image shows the layout of a qwerty keyboard.&lt;/figcaption&gt; <br>
+                            &lt;/figure&gt;</td>
+                        <td rowspan="2">Normally used <span class="elm-text">&lt;figure&gt;</span> with its associated 
+                            <span class="elm-text">&lt;figcaption&gt;</span> nested inside. This way, if position of media will change,
+                        the description will follow along with it.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;figcaption&gt;</td>
+                        <td>Used to describe the media encapsulated within the <span class="elm-text">&lt;figure&gt;</span> element.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;adress&gt;</td>
+                        <td>The <span class="elm-text">&lt;adress&gt;</span> element is like <span class="elm-text">&lt;time&gt;</span> in that it 
+                            doesn`t deal with the overall structure of a document, but rather embellishes the parent <span class="elm-text">&lt;article&gt;
+                            </span> or <span class="elm-text">&lt;body&gt;</span> element with some metadata. It defines contact information for the author 
+                            of the article or web page in question.</td>
+                        <td class="code">&lt;footer&gt;<br>
+                            &lt;p>This fake article was written by somebody at InternetingIsHard.com, which
+                               is a pretty decent place to learn how to become a web developer. This footer
+                               is only for the containing <span class="elm-text">&lt;article&gt;</span>element.&lt;/p&gt;<br>
+                            &lt;address&gt;<br>
+                              Please contact &lt;a href='mailto:xyz@example.com'&gt;xyz&lt;/a&gt; for questions about this article.
+                              &lt;/address&gt;<br>
+                              &lt;/footer&gt;
+                          </td>
+                          <td><span class="elm-text">&lt;adress&gt;</span> should not be used for arbitrary physical addresses!</td>
+                    </tr>
+                    <tr>
+                        <td class="code">&lt;time&gt;</td>
+                        <td>The <span class="elm-text">&lt;time&gt;</span> element represents either a time of day or a calendar date.</td>
+                        <td class="code">&lt;header&gt;<br>
+                            &lt;h1&gt;Semantic HTML&lt;/h1&gt;<br>
+                            &lt;p&gt;By xyz. Published &lt;time datetime='2017-1-3'&gt;January
+                               3rd&lt;/time&gt;&lt;/p&gt;<br>
+                          &lt;/header&gt;</td>
+                        <td>Providing a machine-readable date makes it possible for browsers to automatically link it to users` calendars 
+                            and helps search engines clearly identify specific dates.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>
